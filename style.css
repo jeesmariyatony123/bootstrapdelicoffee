@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cormorant Garamond', serif;
+    
+    
+}
+body{
+    background-color: white;
+}
+.nav-item a:hover{
+    color: darkred;
+}
+
+.nav-link:hover {
+  
+  padding: 6px 0px;
+  background-color:rgb(232, 166, 166);
+}
+
+section {
+    position: relative;
+    max-width:100% ;
+    width: auto;
+    height: 90vh;
+    background: url(https://png.pngtree.com/background/20210711/original/pngtree-coffee-hot-drink-afternoon-tea-banner-background-picture-image_1115539.jpg);
+    background-size: cover;
+    background-position: center;
+    /* important for linear gradient */
+    background-blend-mode: soft-light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+
+section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: block;
+    /* background-color: white; */
+    background: linear-gradient(-45deg, transparent 33.33%, #fff 33.33%,#fff 66.666%, transparent 66.66%), 
+    linear-gradient(45deg, transparent 33.33%, #fff 33.33%,#fff 66.666%, transparent 66.66%);
+
+    /* background: linear-gradient(-135deg, transparent 0%, #fff 12px), linear-gradient(135deg, transparent 0%, #fff 12px) */
+
+
+    background-size: 30px 60px;
+}
+/* section::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    display: block;
+    background: linear-gradient(-45deg, transparent 33.33%, #fff 33.33%,#fff 66.666%, transparent 66.66%), 
+    linear-gradient(45deg, transparent 33.33%, #fff 33.33%,#fff 66.666%, transparent 66.66%);
+    background-size: 30px 60px;
+    transform: rotate(180deg);
+} */
+    /* background: linear-gradient(-45deg, transparent 0%, #fff 12px), linear-gradient(45deg, transparent 0%, #fff 12px) */
+
+section h2{
+    color: #fff;
+    font-size: 10vh;
+    text-align: center;
+}
+
+
+/* card */
+
+.card-img-top{
+    border-radius: 50%;
+    height: 150px !important;
+    width: 150px !important;
+    position: relative;
+    /* left: 80px; */
+    margin-left: auto;
+    margin-right: auto;
+    top: -80px;
+    object-fit: cover;
+
+}
+.card{
+    border-radius: 0;
+    cursor: pointer;
+    margin-top:70px !important ;
+   
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-body{
+    margin-top: -100px;
+}
+
+.bi:hover{
+    color: black;
+}
+
